@@ -4,3 +4,4 @@ let user = {
 
 let marks = 10;
 console.log(marks - user);
+console.log(100 - undefined);
