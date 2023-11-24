@@ -8,5 +8,5 @@ function exampleFunction()
 
 exampleFunction();
 
-console.log("Outside the function")
+console.log("Outside the function");
 console.log(x);
