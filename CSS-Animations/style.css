@@ -1,0 +1,17 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+}
+
+.static{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
