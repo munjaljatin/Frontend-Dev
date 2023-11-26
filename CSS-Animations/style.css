@@ -2,16 +2,64 @@ html{
     box-sizing: border-box;
 }
 
-*, *::after, *::before{
-    box-sizing: border-box;
+*, *::before, *::after{
+    box-sizing: inherit;
+    background-color: lightgray;
 }
 
 .row{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.moving{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 25px;
+    transform: rotate(45deg)
+    /* transform: translate(50px, 50px); */
 }
 
 .static{
     width: 100px;
     height: 100px;
-    background-color: aqua;
+    background-color: green;
+    border-radius: 50px;
+    /* transform: translate(10px, 10px); */
+}
+
+.shapes{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.oval{
+    height: 60px;
+    width: 120px;
+    background-color: brown;
+    /* margin-top: 20px; */
+    border-radius: 50%;
+    /* transform: rotate(90deg); */
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #555;
+    transform: rotate(360deg);
+}
+
+.moving:hover{
+    transform: scale(2,2);
+    transition: 0.5s;
+}
+
+.triangle:hover{
+    transform: rotate(270deg);
+    transform: 0.5s;
 }
