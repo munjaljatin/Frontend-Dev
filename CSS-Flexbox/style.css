@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-weight: 400;
+  /* color: white; */
+}
+
+#container div {
+  /* background-color: #718096; */
+  padding: 2rem;
+  border: 1px solid black;
+  width: 25%;
+  border-radius: 30px;
+  color: white;
+}
+
+#container {
+  display: flex;
+  /* margin: 200px; */
+  margin-top: 200px;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.item-1:hover {
+  /* background-color: #1c7686; */
+  background: linear-gradient(#3cddf6, #3f87a6);
+  color: white;
+  transform: scale(1.1);
+  transition: all 0.5s;
+  border-radius: 50px;
+}
+
+.item-2:hover {
+  /* background-color: #1c7686; */
+  background: linear-gradient(#3cddf6, #3f87a6);
+  color: white;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.item-3:hover {
+  /* background-color: #1c7686; */
+  background: linear-gradient(#3cddf6, #3f87a6);
+  color: white;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+#navigation {
+  display: flex;
+  /* margin-top: 100px; */
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.menu-links ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #000;
+}
+
+.menu-links a:hover {
+  text-decoration: underline;
+  text-decoration-color: grey;
+  transform: 0.2s;
+}
+
+.logo {
+  margin-top: 15px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.main-image {
+  width: 100vw;
+  position: absolute;
+  opacity: 0.9;
+}
+
+/* .main-video{
+    width: 100vw;
+    position: relative;
+    opacity: 0.8;
+} */
