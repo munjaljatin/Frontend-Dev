@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        /* position: relative; */
+      }
+      .button {
+        padding: 1.2rem;
+        /* position: absolute; */
+        margin-top: 200px;
+        font-size: 20px;
+        border: 1px solid white;
+        border-radius: 50px;
+      }
+      .button:hover {
+        background-color: midnightblue;
+        /* background: linear-gradient(to left, salmon 50%, lightblue 50%) right; */
+        background-position: left;
+        color: white;
+        transform: scale(1.2);
+        transition: all 0.5s ease-out;
+      }
+      div {
+        font: 22px Arial;
+        display: inline-block;
+        padding: 1em 2em;
+        text-align: center;
+        color: white;
+        background: red; /* default color */
+
+        /* "to left" / "to right" - affects initial color */
+        background: linear-gradient(to left, salmon 50%, lightblue 50%) right;
+        background-size: 200%;
+        transition: 0.5s ease-out;
+      }
+      div:hover {
+        background-position: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- <h3>Hover on Me.</h3> -->
+      <span>Hover</span>
+    </div>
+    <h3>Click on the Button</h3>
+    <button class="button">Click Me</button>
+    <script>
+      const btn = document.querySelector("button");
+
+      function randomNumber(number) {
+        return Math.floor(Math.random() * (number + 1));
+      }
+
+      btn.addEventListener("click", () => {
+        const randomColor = `rgb(${randomNumber(255)}, ${randomNumber(
+          255
+        )}, ${randomNumber(255)})`;
+        document.body.style.backgroundColor = randomColor;
+        console.log(randomColor);
+      });
+    </script>
+    <div></div>
+    <div></div>
+  </body>
+</html>
