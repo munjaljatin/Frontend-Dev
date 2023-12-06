@@ -74,9 +74,10 @@ p {
 }
 
 .menu-links a:hover {
-  text-decoration: underline;
-  text-decoration-color: grey;
-  transform: 0.2s;
+  /* text-decoration: underline;
+  text-decoration-color: grey; */
+  border-bottom: 1px solid grey;
+  transform: 0.5s;
 }
 
 .logo {

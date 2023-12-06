@@ -55,11 +55,12 @@ html {
 .loader2 > div {
   width: 4rem;
   height: 4rem;
-  border: 5px solid red;
+  border: 5px dotted red;
   border-radius: 50%;
   border-top: 5px solid #f0eeeb;
   border-bottom: 5px solid #f0eeeb;
   animation: spinner 01s linear infinite;
+  /* border-style: ; */
   /* animation-direction: ; */
 }
 
