@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.item-list {
+  max-width: 950px;
+  width: 70vw;
+  display: flex;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+}
+
+.item-list img {
+  width: 500px;
+}
+
+.item {
+  scroll-snap-align: center;
+}
+
+.item-list::-webkit-scrollbar {
+  display: none;
+}
+
+.item-list {
+  --ms-overflow-style: none;
+  scrollbar-width: none;
+}

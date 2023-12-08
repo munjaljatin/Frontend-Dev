@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SlideShow</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Carousel -->
+    <div class="containter">
+      <div class="carousel-view">
+        <button id="prev-btn" class="prev-button"><</button>
+        <div class="item-list" id="item-list">
+          <img src="./neom--RlktmDy3Ec-unsplash.jpg" alt="" class="list" />
+          <img src="./neom-THlO6Mkf5uI-unsplash.jpg" alt="" class="list" />
+          <img src="./neom--RlktmDy3Ec-unsplash.jpg" alt="" class="item" />
+        </div>
+        <button class="next-button" id="next-btn">></button>
+      </div>
+    </div>
+
+    <script>
+      const prev = document.getElementById("prev-btn");
+      const next = document.getElementById("next-btn");
+      const list = document.getElementByI("item-list");
+      const itemWidth = 150;
+      const padding = 10;
+
+      prev.addEventListener("click", () => {
+        list.scrollLeft -= itemWidth + padding;
+      });
+      next.addEventListener("click", () => {
+        list.scrollLeft += itemWidth + padding;
+      });
+    </script>
+  </body>
+</html>
