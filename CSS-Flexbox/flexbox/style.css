@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+#parent {
+  /* flex container */
+  border: 10px solid red;
+  display: flex;
+  /* flex-flow: row wrap; */
+  justify-content: space-between;
+  background-color: blue;
+  height: 200px;
+  margin-bottom: 50px;
+}
+
+#parent div {
+  /* flex items */
+  border: 2px solid green;
+  padding: 20px;
+  min-width: 100px;
+  background-color: blanchedalmond;
+  max-width: 250px;
+  height: 100px;
+}
+
+/* Header */
+#container {
+  width: 1100px;
+  margin: 0 auto;
+  background-color: lightgray;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#navbar .right {
+  margin-top: 25px;
+}
+
+#navbar a {
+  margin-left: 10px;
+  text-decoration: none;
+  padding: 15px;
+  color: black;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 100px;
+}
+
+#navbar a:hover {
+  background-color: lightcyan;
+}

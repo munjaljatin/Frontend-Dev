@@ -30,7 +30,13 @@ p {
 
 .item-1:hover {
   /* background-color: #1c7686; */
-  background: linear-gradient(#3cddf6, #3f87a6);
+  /* background: linear-gradient(#3cddf6, #3f87a6); */
+  background: linear-gradient(
+    141deg,
+    rgba(0, 8, 29, 1) 11%,
+    rgba(16, 10, 35, 1) 35%,
+    rgba(60, 8, 33, 1) 89%
+  );
   color: white;
   transform: scale(1.1);
   transition: all 0.5s;
@@ -47,7 +53,13 @@ p {
 
 .item-3:hover {
   /* background-color: #1c7686; */
-  background: linear-gradient(#3cddf6, #3f87a6);
+  /* background: linear-gradient(#3cddf6, #3f87a6); */
+  background: linear-gradient(
+    141deg,
+    rgba(0, 8, 29, 1) 11%,
+    rgba(16, 10, 35, 1) 35%,
+    rgba(60, 8, 33, 1) 89%
+  );
   color: white;
   transform: scale(1.1);
   transition: all 0.5s;
