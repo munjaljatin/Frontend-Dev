@@ -11,7 +11,7 @@ function createPromiseWithLoop() {
       resolve(num);
     } else {
       // if the number is odd then promise will gets rejected
-      reject(nmu);
+      reject(num);
     }
   });
 }
@@ -19,6 +19,7 @@ function createPromiseWithLoop() {
 function createPromiseWithTimeOut() {
   return new Promise((resolve, reject) => {
     setTimeout(function () {
+      for (let i = 0; i < 10000000000; i++) {}
       let num = getRandomInteger(5);
       if (num % 2 == 0) {
         resolve(num);
@@ -30,6 +31,7 @@ function createPromiseWithTimeOut() {
 }
 
 const x = createPromiseWithLoop();
+console.log(createPromiseWithLoop);
 console.log(x);
 
 const y = createPromiseWithTimeOut();
