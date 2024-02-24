@@ -1,7 +1,4 @@
-// function Declaration => When the first valid expression of the line where we are defining the function is the keyword "function" then it is called function declaration
-function fun() {
-  // some code goes here
-}
+// function Declaration => When the first valid expression of the line where we are defining the function is the keyword "function" then it is called function declarationfunction fun() {// some code goes here
 
 // function expresstions
 let a = function fun() {
@@ -23,3 +20,10 @@ let z = function () {
 let r = () => {
   // function logic
 };
+
+var main = function log() {
+  console.log("You've to call the main function");
+};
+
+main();
+// log();

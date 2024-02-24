@@ -1,4 +1,5 @@
 // IIFE => Immediate Invoked Function Expression
+// Author => Jatin Munjal
 (function log(message) {
   console.log("Hello");
   let arr = [10, 20, 30, 40, 50];
@@ -16,3 +17,11 @@ function factorial(val) {
   console.log(arr);
   console.trace();
 })();
+
+(function sqaure(val) {
+  let result = val * val;
+  // return result;
+  console.log(result);
+})(10);
+
+let test = function () {};
