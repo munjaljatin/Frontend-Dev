@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">Not Rendered.</div>
     <!-- React CDN -->
     <script
       crossorigin
@@ -16,17 +16,38 @@
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
     ></script>
-    <script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Own code -->
+    <script type="text/babel">
       const App = () => {
+        // whenever we call the App() method, a react element should be created and then returned.
         return React.createElement(
           "div",
           {},
-          React.createElement("h2", {}, "Welcome to the ReactJs Universe.")
+          React.createElement("h1", {}, "Welcome to the ReactJs Universe.")
         );
       };
+      const Element = () => {
+        return React.createElement("h2", {}, "Javascript");
+      };
+      const content =
+        "Javascript is a general pupose, single threaded programming language.";
+
+      const paraElement = function () {
+        // whenever we call this method then a react element should be created and returned
+        return React.createElement("p", {}, content);
+      };
+
+      const newElement = function () {
+        return <a href="https://google.com">Go to Google</a>;
+      };
+
+      // react dom root element
       const rootNode = document.getElementById("root");
       const root = ReactDOM.createRoot(rootNode);
-      root.render(App());
+      // root.render(App());
+      // root.render(Element());
+      root.render([App(), Element(), paraElement(), newElement()]);
     </script>
   </body>
 </html>
