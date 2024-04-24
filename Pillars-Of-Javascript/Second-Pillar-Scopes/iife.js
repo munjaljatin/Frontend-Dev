@@ -25,3 +25,14 @@ function factorial(val) {
 })(10);
 
 let test = function () {};
+
+(function iife() {
+  console.log([2, 4, 6, 8, 10].map(factorial));
+  console.trace();
+})();
+
+(function iife1() {
+  const oddArray = [1, 3, 5, 7, 9];
+  console.log(oddArray.map(factorial));
+  console.trace();
+})();
